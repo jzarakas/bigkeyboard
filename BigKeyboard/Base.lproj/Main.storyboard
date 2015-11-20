@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BigKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJo-bC-Tk0">
+                                <rect key="frame" x="43" y="158" width="94" height="30"/>
+                                <animations/>
+                                <state key="normal" title="ABCDE"/>
+                                <connections>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="miB-vJ-9mJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkW-Zn-fOQ">
+                                <rect key="frame" x="170" y="158" width="120" height="30"/>
+                                <animations/>
+                                <state key="normal" title="FGHIJK"/>
+                                <connections>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kpk-2p-BFE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-oP-dWD">
+                                <rect key="frame" x="305" y="158" width="118" height="30"/>
+                                <animations/>
+                                <state key="normal" title="LMNOP"/>
+                                <connections>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggl-Kr-Vdx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-it-RfL">
+                                <rect key="frame" x="43" y="221" width="112" height="30"/>
+                                <animations/>
+                                <state key="normal" title="QRSTU"/>
+                                <connections>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZs-IB-ma4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OT-ZI-naz">
+                                <rect key="frame" x="163" y="216" width="96" height="30"/>
+                                <animations/>
+                                <state key="normal" title="VWXYZ"/>
+                                <connections>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leO-Zf-but"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zA-vT-6BM">
+                                <rect key="frame" x="431" y="158" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Backspace"/>
+                                <connections>
+                                    <action selector="onBackspace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VtX-J7-z03"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es3-I7-lvu">
+                                <rect key="frame" x="450" y="196" width="36" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="onClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSA-3S-SUE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhf-OJ-d4F">
+                                <rect key="frame" x="59" y="60" width="550" height="90"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-4t-Hbb">
+                                <rect key="frame" x="330" y="216" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Z"/>
+                                <connections>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wG-RV-6Wt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5W-N1-0Yb">
+                                <rect key="frame" x="452" y="228" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5O6-5t-Vhj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="BackButton" destination="r5W-N1-0Yb" id="wSs-Wc-KHI"/>
+                        <outlet property="Buffer" destination="Nhf-OJ-d4F" id="qz1-dc-3Sm"/>
+                        <outlet property="ZButton" destination="ejY-4t-Hbb" id="7nj-UX-jCx"/>
+                        <outletCollection property="BUTTONS" destination="zJo-bC-Tk0" collectionClass="NSMutableArray" id="Phr-Zt-3YA"/>
+                        <outletCollection property="BUTTONS" destination="qkW-Zn-fOQ" collectionClass="NSMutableArray" id="h8H-VB-R2I"/>
+                        <outletCollection property="BUTTONS" destination="eWh-oP-dWD" collectionClass="NSMutableArray" id="dJO-0V-DoL"/>
+                        <outletCollection property="BUTTONS" destination="bCq-it-RfL" collectionClass="NSMutableArray" id="2AR-7u-nQq"/>
+                        <outletCollection property="BUTTONS" destination="4OT-ZI-naz" collectionClass="NSMutableArray" id="mOv-gk-wIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+    </scenes>
+</document>
