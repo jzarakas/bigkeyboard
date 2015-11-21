@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -18,82 +18,99 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJo-bC-Tk0">
-                                <rect key="frame" x="43" y="158" width="94" height="30"/>
+                                <rect key="frame" x="20" y="168" width="140" height="140"/>
                                 <animations/>
-                                <state key="normal" title="ABCDE"/>
+                                <color key="backgroundColor" red="1" green="0.010051519906342232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                <state key="normal" title="ABCDE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="miB-vJ-9mJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkW-Zn-fOQ">
-                                <rect key="frame" x="170" y="158" width="120" height="30"/>
+                                <rect key="frame" x="204" y="168" width="140" height="140"/>
                                 <animations/>
-                                <state key="normal" title="FGHIJK"/>
+                                <color key="backgroundColor" red="1" green="0.564285169027678" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                <state key="normal" title="FGHIJ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kpk-2p-BFE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-oP-dWD">
-                                <rect key="frame" x="305" y="158" width="118" height="30"/>
+                                <rect key="frame" x="386" y="168" width="140" height="140"/>
                                 <animations/>
-                                <state key="normal" title="LMNOP"/>
+                                <color key="backgroundColor" red="0.052765942153759404" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                <state key="normal" title="KLMNO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggl-Kr-Vdx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-it-RfL">
-                                <rect key="frame" x="43" y="221" width="112" height="30"/>
+                                <rect key="frame" x="20" y="336" width="140" height="140"/>
                                 <animations/>
-                                <state key="normal" title="QRSTU"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.036595565578553924" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                <state key="normal" title="PQRST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZs-IB-ma4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OT-ZI-naz">
-                                <rect key="frame" x="163" y="216" width="96" height="30"/>
-                                <animations/>
-                                <state key="normal" title="VWXYZ"/>
-                                <connections>
-                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leO-Zf-but"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zA-vT-6BM">
-                                <rect key="frame" x="431" y="158" width="75" height="30"/>
+                                <rect key="frame" x="370" y="336" width="205" height="55"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
                                 <state key="normal" title="Backspace"/>
                                 <connections>
                                     <action selector="onBackspace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VtX-J7-z03"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es3-I7-lvu">
-                                <rect key="frame" x="450" y="196" width="36" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhf-OJ-d4F">
+                                <rect key="frame" x="25" y="28" width="550" height="109"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5W-N1-0Yb">
+                                <rect key="frame" x="20" y="547" width="93" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5O6-5t-Vhj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OT-ZI-naz">
+                                <rect key="frame" x="204" y="336" width="140" height="140"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.96340443442144608" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                <state key="normal" title="UVWXYZ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leO-Zf-but"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es3-I7-lvu">
+                                <rect key="frame" x="420" y="411" width="104" height="65"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="onClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSA-3S-SUE"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhf-OJ-d4F">
-                                <rect key="frame" x="59" y="60" width="550" height="90"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-4t-Hbb">
-                                <rect key="frame" x="330" y="216" width="30" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Z"/>
-                                <connections>
-                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wG-RV-6Wt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5W-N1-0Yb">
-                                <rect key="frame" x="452" y="228" width="34" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="onBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5O6-5t-Vhj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,7 +121,6 @@
                     <connections>
                         <outlet property="BackButton" destination="r5W-N1-0Yb" id="wSs-Wc-KHI"/>
                         <outlet property="Buffer" destination="Nhf-OJ-d4F" id="qz1-dc-3Sm"/>
-                        <outlet property="ZButton" destination="ejY-4t-Hbb" id="7nj-UX-jCx"/>
                         <outletCollection property="BUTTONS" destination="zJo-bC-Tk0" collectionClass="NSMutableArray" id="Phr-Zt-3YA"/>
                         <outletCollection property="BUTTONS" destination="qkW-Zn-fOQ" collectionClass="NSMutableArray" id="h8H-VB-R2I"/>
                         <outletCollection property="BUTTONS" destination="eWh-oP-dWD" collectionClass="NSMutableArray" id="dJO-0V-DoL"/>
