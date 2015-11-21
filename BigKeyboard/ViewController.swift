@@ -67,6 +67,7 @@ class ViewController: UIViewController {
         
         if (x.titleLabel!.text!.characters.count == 1) {
             Buffer.text = Buffer.text! + x.titleLabel!.text!
+            setupButtons()
             return
         }
         
