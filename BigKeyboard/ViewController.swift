@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var BUTTONS: Array<UIButton>?
     
     @IBOutlet weak var BackButton: UIButton!
-    let ALPHABET :NSString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let ALPHABET :NSString = "ABC\nDEFGHIJKLMNOPQRSTUVWXYZ"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         }
         //when button 4 is inside the loop with a hard coded fix to add z, it kept adding z every time back was pressed.
         BUTTONS![4].setTitle(ALPHABET.substringWithRange(NSRange(location: 20, length: 6)), forState: .Normal)
-        ZButton.hidden = true
+        ZButton.setTitle("SPACE", forState: .Normal)
         BackButton.hidden = true
     }
     
@@ -48,6 +48,16 @@ class ViewController: UIViewController {
         Buffer.text = ""
     }
     
+    @IBAction func onZ(sender: AnyObject) {
+        let x: UIButton = sender as! UIButton
+        if x.titleLabel!.text == "Z" {
+            Buffer.text = Buffer.text! + "Z"
+            setupButtons()
+            return
+        }
+        
+        Buffer.text = Buffer.text! + " "
+    }
     @IBAction func onBackspace(sender: AnyObject) {
         let words :NSString = Buffer.text!
         if words.length == 0 {
@@ -80,7 +90,7 @@ class ViewController: UIViewController {
                 break
             }
         }
-        ZButton.hidden = false
+        ZButton.setTitle("Z", forState: .Normal)
         BackButton.hidden = false
         
         
