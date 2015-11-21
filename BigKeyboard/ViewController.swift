@@ -25,6 +25,10 @@ class ViewController: UIViewController {
     func setupButtons() {
         var i = 0
         for b in BUTTONS! {
+            b.contentHorizontalAlignment = .Center
+            b.contentVerticalAlignment = .Center
+            b.titleLabel?.numberOfLines = 0
+            b.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
             b.setTitle(ALPHABET.substringWithRange(NSRange(location: i, length: 5)), forState: .Normal)
             i = i + 5
         }
