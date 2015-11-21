@@ -42,10 +42,8 @@ class ViewController: UIViewController {
         var i = 0
 
         for b in BUTTONS! {
-        
-            //doesn't center
-//           b.contentHorizontalAlignment = .Center
-//            b.contentVerticalAlignment = .Center
+    
+            b.titleLabel?.textAlignment = .Center;
             b.titleLabel?.numberOfLines = 0
             
             let title = ALPHABET.substringWithRange(NSRange(location: i, length: 5))
@@ -57,6 +55,7 @@ class ViewController: UIViewController {
         BUTTONS![4].setTitle(lineWrap(ALPHABET.substringWithRange(NSRange(location: 20, length: 6))), forState: .Normal)
         ZButton.setTitle("SPACE", forState: .Normal)
         ZButton.hidden = false
+        ZButton.titleLabel?.textAlignment = .Center;
         BackButton.hidden = true
     }
 
