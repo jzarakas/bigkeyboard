@@ -22,22 +22,44 @@ class ViewController: UIViewController {
         setupButtons()
     }
     
+    func lineWrap(title: String) -> String {
+        var j = 0
+        var titleBuffer = ""
+        for c in (title.characters) {
+            titleBuffer = titleBuffer + String(c)
+            if j == 2 {
+                titleBuffer = titleBuffer + "\n"
+                j = 0
+            } else {
+                j = j + 1
+            }
+        }
+
+        return titleBuffer.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    }
+    
     func setupButtons() {
         var i = 0
+
         for b in BUTTONS! {
-            b.contentHorizontalAlignment = .Center
-            b.contentVerticalAlignment = .Center
+        
+            //doesn't center
+//           b.contentHorizontalAlignment = .Center
+//            b.contentVerticalAlignment = .Center
             b.titleLabel?.numberOfLines = 0
-            b.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
-            b.setTitle(ALPHABET.substringWithRange(NSRange(location: i, length: 5)), forState: .Normal)
+            
+            let title = ALPHABET.substringWithRange(NSRange(location: i, length: 5))
+            b.setTitle(lineWrap(title), forState: .Normal)
             i = i + 5
         }
+        
         //when button 4 is inside the loop with a hard coded fix to add z, it kept adding z every time back was pressed.
-        BUTTONS![4].setTitle(ALPHABET.substringWithRange(NSRange(location: 20, length: 6)), forState: .Normal)
+        BUTTONS![4].setTitle(lineWrap(ALPHABET.substringWithRange(NSRange(location: 20, length: 6))), forState: .Normal)
         ZButton.setTitle("SPACE", forState: .Normal)
         ZButton.hidden = false
         BackButton.hidden = true
     }
+
     
     
     override func didReceiveMemoryWarning() {
@@ -84,7 +106,7 @@ class ViewController: UIViewController {
         
 
         
-        let letters = x.titleLabel?.text!
+        let letters = x.titleLabel?.text!.stringByReplacingOccurrencesOfString("\n", withString: "")
         var i = 0
         for c in (letters?.characters)! {
             BUTTONS![i].setTitle( "\(c)", forState: .Normal)
